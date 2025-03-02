@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables</title>
-  </head>
-  <body>
-    <!-- Write your HTML here -->
-  </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        td:first-child {
+            font-style: italic;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        img {
+            width: 20px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Create HTML Tables</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>State</th>
+                <th>2017 Estimate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><em>New York</em></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_New_York.svg/20px-Flag_of_New_York.svg.png" alt="NY"> New York</td>
+                <td>8,622,698</td>
+            </tr>
+            <tr>
+                <td><em>Los Angeles</em></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/20px-Flag_of_California.svg.png" alt="CA"> California</td>
+                <td>3,999,759</td>
+            </tr>
+            <tr>
+                <td><em>Chicago</em></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Illinois.svg/20px-Flag_of_Illinois.svg.png" alt="IL"> Illinois</td>
+                <td>2,716,450</td>
+            </tr>
+            <tr>
+                <td><em>Houston</em></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/20px-Flag_of_Texas.svg.png" alt="TX"> Texas</td>
+                <td>2,312,717</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
 </html>
